@@ -1,2 +1,2 @@
-# non-vendor-stuff-
-Repo to store non-work related stuff ;)
+# Random Cool Stuff
+Repo to store random and cool stuff ;)

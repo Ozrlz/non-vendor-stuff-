@@ -11,7 +11,7 @@ Then, run a container:
 ## How to use it remotely (GKE)
 The client needs some env vars, which are exposed to K8s as a configMap. First you need to create it:
 
-  > kubectl create configmap configMap-flask --from-file=./env_file.txt
+  > kubectl create configmap configmap-flask --from-file=./env_file.txt
 
 After that, just create the Deployment
 

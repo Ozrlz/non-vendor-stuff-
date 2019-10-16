@@ -3,7 +3,7 @@ from os import environ
 from socket import gethostname
 
 app = Flask(__name__)
-FLASK_PORT = environ.get('PORT_NUMBER')
+FLASK_PORT = environ.get('PORT_NUMBER', 5000)
 
 @app.route('/')
 def root():

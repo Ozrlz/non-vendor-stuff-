@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: flask
-        image: gcr.io/oscar-test-01/flask-client:1.0
+        image: ozrlz/flask-client:k8s
         tty: true
         ports:
         - containerPort: 5000

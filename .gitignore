@@ -1,0 +1,5 @@
+# Certs and stuff
+*.csr
+*.crt
+*.key
+*.pem

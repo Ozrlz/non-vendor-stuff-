@@ -1,0 +1,18 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: ingress-flask
+  namespace: default
+  annotations:
+    kubernetes.io/ingress.allow-http: "false"
+    kubernetes.io/ingress.global-static-ip-name: "cloud-armor-static"    
+spec:
+  tls:
+  - secretName: cert1
+  rules:
+  - host: "flask.ozrlz.com" # Wildcard allowed here
+    http:
+      paths:
+      - backend:
+          serviceName: flask
+          servicePort: http
